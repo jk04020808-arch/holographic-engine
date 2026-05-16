@@ -1,0 +1,8 @@
+{
+  "name": "Holographic Engine",
+  "description": "A WebGL experiment exploring the boundary between solid mesh and particle clouds.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
