@@ -6,12 +6,10 @@
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
   --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
 
-  --color-black-bg: #050505;
-  --color-cyan-glow: #00F2FF;
-  --color-purple-void: #A855F7;
+  --color-black-bg: #000000;
   --color-text-main: #FFFFFF;
-  --color-text-muted: #A1A1AA;
-  --color-text-dark: #52525B;
+  --color-text-muted: #D4D4D8;
+  --color-text-dark: #71717A;
 }
 
 body {
@@ -39,8 +37,9 @@ body {
   width: 100vw;
   height: 100vh;
   pointer-events: none;
-  z-index: 50;
+  z-index: 0;
   opacity: 0.04;
+  mix-blend-mode: screen;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
 }
 
@@ -52,8 +51,8 @@ a, button, input, [role="button"] {
 
 /* Minimalist glowing shadow */
 .glow-border {
-  box-shadow: 0 0 15px rgba(0, 242, 255, 0.1);
-  border: 1px solid rgba(0, 242, 255, 0.2);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .text-gradient {

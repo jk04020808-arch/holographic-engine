@@ -1,0 +1,12 @@
+import fs from 'fs';
+let content = fs.readFileSync('src/App.tsx', 'utf-8');
+content = content.replace(/bg-white\/\[0\.01\]/g, 'bg-black/40');
+content = content.replace(/bg-white\/\[0\.02\]/g, 'bg-black/60');
+content = content.replace(/bg-white\/\[0\.04\]/g, 'bg-black/80');
+content = content.replace(/border-white\/10/g, 'border-white/5');
+content = content.replace(/border-white\/20/g, 'border-white/10');
+content = content.replace(/opacity-70/g, 'opacity-100 text-gray-300');
+content = content.replace(/opacity-60/g, 'opacity-100 text-gray-400');
+content = content.replace(/opacity-50/g, 'opacity-100 text-gray-500');
+content = content.replace(/rgba\(0, 0, 0, 0\.2\)/g, 'rgba(0, 0, 0, 0.4)');
+fs.writeFileSync('src/App.tsx', content);
